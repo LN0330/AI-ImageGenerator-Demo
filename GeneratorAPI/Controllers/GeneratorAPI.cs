@@ -37,7 +37,7 @@ public class GreetingController : ControllerBase
             process.Start();
 
             // 返回狀態，表示圖像生成已開始，等待完成
-            return Ok(new { message = "Image generation started. Please check back later." });
+            return Ok(new { message = "正在生成圖像..." });
         }
         catch (Exception ex)
         {
@@ -55,7 +55,7 @@ public class GreetingController : ControllerBase
             return File(imageBytes, "image/png"); // 返回圖片的二進制數據
         }
 
-        return NotFound(new { message = "Image not ready yet." });
+        return NotFound(new { message = "圖片還未生成" });
     }
 
     public class UserPrompt
