@@ -1,5 +1,5 @@
-# AI-ImageGenerator-Demo
-### 透過本地Stable Diffusion模型實現AI繪圖 (txt2img)
+# AI-ImageGenerator-Demo (WPF)
+### 透過 WPF + ASP.NET Core Web API 實作 AI 圖像生成功能 (使用本地 Stable Diffusion 模型)
 - Demo重點: MVC概念實作、API調用、非同步進程實作
 ---
 - 撰寫語言: C#  
